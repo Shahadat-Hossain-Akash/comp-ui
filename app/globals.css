@@ -1,26 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  --background: #171717;
-  --foreground: #ffffff;
+    --background: #171717;
+    --foreground: #ffffff;
 }
 
+@plugin "tailwind-scrollbar";
+
+
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-sans);
+    --font-mono: var(--font-mono);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ededed;
-    --foreground: #0a0a0a;
-  }
+    :root {
+        --background: #ededed;
+        --foreground: #0a0a0a;
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+
